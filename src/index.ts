@@ -11,13 +11,13 @@ const bulldesk = (token: string) =>
     timeout: 1000,
   })
 
-const conversion = (lead: ILead, token: string) =>
+export const conversion = (lead: ILead, token: string) =>
   bulldesk(token)
     .post('/conversion', { ...lead, token })
     .then(result => result)
     .catch(err => err)
 
-const getLeads = (page: number = 0, token: string) =>
+export const getLeads = (page: number = 0, token: string) =>
   bulldesk(token)
     .get(`/lead?page=${page}`)
     .then(result => result)
