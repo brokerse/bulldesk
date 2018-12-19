@@ -4,7 +4,11 @@
   "version": "0.1.0",
   "author": "Rodrigo Oler <https://github.com/rodrigooler>",
   "dependencies": {
-    "axios": "^0.18.0"
+    "axios": "0.18.0"
+  },
+  "devDependencies": {
+    "tslint": "5.12.0",
+    "typescript": "3.2.2"
   },
   "license": "MIT",
   "main": "dist/index.js",
