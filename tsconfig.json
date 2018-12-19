@@ -1,9 +1,8 @@
 {
   "compilerOptions": {
-    "esModuleInterop": true,
+    "removeComments": true,
     "module": "commonjs",
     "outDir": "dist",
-    "strict": true,
     "target": "es5"
   }
 }
