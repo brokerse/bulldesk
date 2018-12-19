@@ -3,22 +3,23 @@ import { ILead } from './interfaces'
 
 const bulldesk = (token: string) =>
   axios.create({
+    baseURL: 'https://api.bulldesk.com.br',
     headers: {
       Accept: 'application/json',
       Authorization: `Bearer ${token}`,
     },
-    url: 'https://api.bulldesk.com.br',
+    timeout: 1000,
   })
 
-const conversion = (lead: ILead) =>
-  bulldesk()
-    .post('/conversion', lead)
+const conversion = (lead: ILead, token: string) =>
+  bulldesk(token)
+    .post('/conversion', { ...lead, token })
     .then(result => result)
     .catch(err => err)
 
-const getLeads = (page?: number) =>
-  bulldesk()
-    .get('/leads')
+const getLeads = (page: number = 0, token: string) =>
+  bulldesk(token)
+    .get(`/lead?page=${page}`)
     .then(result => result)
     .catch(err => err)
 
