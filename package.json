@@ -1,0 +1,12 @@
+{
+  "name": "@clubinvest/bulldesk",
+  "description": "SDK Bulldesk",
+  "version": "0.1.0",
+  "author": "Rodrigo Oler <https://github.com/rodrigooler>",
+  "dependencies": {
+    "axios": "^0.18.0"
+  },
+  "license": "MIT",
+  "main": "dist/index.js",
+  "repository": "git@github.com:clubinvest/bulldesk.git"
+}
