@@ -28,7 +28,7 @@
       "git add"
     ]
   },
-  "main": "src/index.ts",
+  "main": "dist/index.js",
   "prettier": {
     "parser": "typescript",
     "printWidth": 80,
