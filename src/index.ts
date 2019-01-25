@@ -8,7 +8,6 @@ const bulldesk = (token: string) =>
       Accept: 'application/json',
       Authorization: `Bearer ${token}`,
     },
-    timeout: 1000,
   })
 
 export const conversion = (lead: ILead, token: string) =>

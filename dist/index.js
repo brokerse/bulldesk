@@ -23,7 +23,6 @@ var bulldesk = function(token) {
       Accept: 'application/json',
       Authorization: 'Bearer ' + token,
     },
-    timeout: 1000,
   })
 }
 exports.conversion = function(lead, token) {
